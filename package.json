@@ -2,7 +2,7 @@
   "name": "advnced-js-task",
   "version": "1.0.0",
   "description": "",
-  "main": "tests.js",
+  "main": "solution/index.js",
   "scripts": {
     "test": "jest"
   },
