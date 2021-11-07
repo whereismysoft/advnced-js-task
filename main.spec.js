@@ -146,7 +146,3 @@ it('set forEach method working properly', () => {
     expect(arr2).toEqual([27])
 
 })
-
-// set.forEach(function (item) {
-//     console.log(item.getValue.call(this)); // 42
-// }, data)

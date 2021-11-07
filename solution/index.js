@@ -43,6 +43,10 @@ module.exports = class {
         return this.set.forEach(cb, context)
     }
 
+    valueOf() {
+        return this
+    }
+
     *valuesIterator(cb) {
         let index = 0;
         const arr = this.set
