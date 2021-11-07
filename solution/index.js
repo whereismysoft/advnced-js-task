@@ -40,11 +40,7 @@ module.exports = class {
     }
 
     forEach(cb, context) {
-        this.set.forEach(item => {
-            Object.setPrototypeOf(item, context)
-            const binded = cb.bind(context)
-            return binded(item)
-        })
+        return this.set.forEach(cb, context)
     }
 
     *valuesIterator(cb) {
