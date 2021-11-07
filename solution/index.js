@@ -53,7 +53,7 @@ module.exports = class {
         while (index < arr.length) {
             const curretIndex = index
             index++
-            yield cb(arr[curretIndex], curretIndex) // redefine wiht next, done
+            yield cb(arr[curretIndex]) // redefine wiht next, done
         }
     }
 
@@ -66,7 +66,7 @@ module.exports = class {
     }
 
     keys() {
-        return this.valuesIterator((item, key) => key)
+        return this.valuesIterator(item => item)
     }
 
     [Symbol.iterator]() {
