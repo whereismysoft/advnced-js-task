@@ -51,7 +51,9 @@ module.exports = class {
         let index = 0;
         const arr = this.set
         while (index < arr.length) {
-            yield cb(arr[index++], arr) // redefine wiht next, done
+            const curretIndex = index
+            index++
+            yield cb(arr[curretIndex], curretIndex) // redefine wiht next, done
         }
     }
 
@@ -61,6 +63,10 @@ module.exports = class {
 
     values() {
         return this.valuesIterator(item => item)
+    }
+
+    keys() {
+        return this.valuesIterator((item, key) => key)
     }
 
     [Symbol.iterator]() {
