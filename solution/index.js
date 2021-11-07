@@ -1,5 +1,5 @@
 class MySet {
-    constructor(arr) {
+    constructor(arr = []) {
         this.set = this.saveUniqueValues(arr)
     }
 
