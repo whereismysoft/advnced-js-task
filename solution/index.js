@@ -59,6 +59,10 @@ module.exports = class {
         return this.valuesIterator(item => [item, item])
     }
 
+    values() {
+        return this.valuesIterator(item => item)
+    }
+
     [Symbol.iterator]() {
         return this.valuesIterator(item => item)
     }
