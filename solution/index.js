@@ -1,4 +1,4 @@
-class MySet {
+module.exports = class {
     constructor(arr = []) {
         this.set = this.saveUniqueValues(arr)
     }
@@ -63,61 +63,3 @@ class MySet {
         return this.valuesIterator(item => item)
     }
 }
-
-// MySet.prototype.valueOf = function () {
-//     return this.values;
-// };
-
-// const set = new MySet([4, 8, 15, 15, 16, 23, 42, 4, 4]);
-
-// console.log([...set]); // [ 4, 8, 15, 16, 23, 42 ]
-// console.log('[size]', set.size) // [4, 8, 15, 15, 16, 23, 42, 4, 4].length
-
-// for (const item of set) {
-//     console.log(item); // 4 8 15 16 23 42
-// }
-
-// for (const item of set.entries()) {
-//     console.log(item); // [ 4, 4 ] [ 8, 8 ] ...
-// }
-
-// set.clear()
-
-// console.log('[size]', set.size) // 0
-
-// set.add(20).add(30).add(40);
-
-// console.log([...set]);
-
-// set.delete(30);
-
-// console.log([...set]);
-
-// const obj = {}
-
-// set.add(obj)
-
-// console.log('[has obj]', set.has(obj))
-
-// console.log(set === set.valueOf())
-
-// const object = {
-//     getValue() {
-//         console.log(this)
-//         return this.value
-//     }
-// }
-
-// const data = {
-//     value: 42
-// }
-
-// set.clear();
-
-// set.add(object).add(object).add(object);
-
-// set.forEach(function (item) {
-//     console.log(item.getValue.call(this)); // 42
-// }, data)
-
-module.exports = MySet

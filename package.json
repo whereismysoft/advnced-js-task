@@ -1,0 +1,22 @@
+{
+  "name": "advnced-js-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tests.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whereismysoft/advnced-js-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whereismysoft/advnced-js-task/issues"
+  },
+  "homepage": "https://github.com/whereismysoft/advnced-js-task#readme",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
+}
